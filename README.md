@@ -1,2 +1,2 @@
-# Attention as Disentangler
+# Attention as Disentangler (ADE)
 Learning Attention as Disentangler for Compositional Zero-shot Learning (CVPR 2023)
