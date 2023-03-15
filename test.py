@@ -116,8 +116,7 @@ def main():
                     print('New best AUC',best_auc)
                     print('A*O weight',best_aow)
 
-        # args.aow = best_aow
-        best_aow = 1.0
+        args.aow = best_aow
 
         if args.open_world:
             log.info("{}_ow best aow: {}".format(args.dataset, best_aow))
