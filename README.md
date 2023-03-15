@@ -1,7 +1,7 @@
 ## Attention as Disentangler (CVPR 2023)
 This is the official PyTorch codes for the paper:  
 
-**Learning Attention as Disentangler for Compositional Zero-shot Learning (CVPR 2023)**  
+**Learning Attention as Disentangler for Compositional Zero-shot Learning**  
 [Shaozhe Hao](),
 [Kai Han](https://www.kaihan.org/), 
 [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/)  
