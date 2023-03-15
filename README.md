@@ -16,7 +16,9 @@ TL;DR: A simgle and common cross-attention mechanism is efficient to disentangle
 
 ### 🛠️ Setup
 
-### ⏳ Download datasets
+### ⏳ Download
+#### Datasets
+#### Pretrained model
 
 ### 🏃 Running
 #### Train
