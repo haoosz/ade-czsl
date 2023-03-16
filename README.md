@@ -3,10 +3,11 @@
 This is the official PyTorch codes for the paper:  
 
 [**Learning Attention as Disentangler for Compositional Zero-shot Learning**]()  
-[Shaozhe Hao](),
+[Shaozhe Hao](https://haoosz.github.io/),
 [Kai Han](https://www.kaihan.org/), 
 [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/)  
-[Project Page]()
+CVPR 2023  
+[Project Page](https://haoosz.github.io/ade-czsl/)
 
 <!-- ![GitHub](https://img.shields.io/github/license/haoosz/ade-czsl) -->
 
