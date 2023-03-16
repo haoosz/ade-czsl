@@ -6,3 +6,4 @@ data/__pycache__
 models/__pycache__
 pretrain
 utils/__pycache__
+ckpt.tar.gz
