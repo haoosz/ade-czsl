@@ -8,7 +8,7 @@ This is the official PyTorch codes for the paper:
 [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/)  
 [Project Page]()
 
-![GitHub](https://img.shields.io/github/license/haoosz/ade-czsl)
+<!-- ![GitHub](https://img.shields.io/github/license/haoosz/ade-czsl) -->
 
 ![image](img/pipeline.png)
 
