@@ -80,3 +80,6 @@ If you use this code in your research, please consider citing our paper:
                booktitle={CVPR},
                year={2023}}
 ```
+
+### 🌟 Shoutouts
+Our project is based on [CZSL](https://github.com/ExplainableML/czsl). Thanks for open source!
