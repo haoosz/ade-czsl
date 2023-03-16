@@ -1,4 +1,4 @@
-## Attention as Disentangler (CVPR 2023)
+# Attention as Disentangler (CVPR 2023)
 
 This is the official PyTorch codes for the paper:  
 
@@ -16,7 +16,7 @@ This is the official PyTorch codes for the paper:
 
 ---
 
-### ⚙️ Setup
+## Setup
 Our work is implemented in PyTorch and tested with Ubuntu 18.04/20.04.
 
 - Python 3.8
@@ -28,7 +28,7 @@ conda env create -f environment.yml
 conda activate ade
 ```
 
-### ⏳ Download
+## Download
 
 **Datasets**: We include a script to download all datasets used in our paper. You need to download any dataset before training the model. Please download datasets using
 ```
@@ -44,34 +44,39 @@ Please download the [pretrained models](https://drive.google.com/drive/folders/1
 python test.py --log ckpt/MODEL_FOLDER
 ```
 
-### 🚀 Training
+## 🚀 Run the codes
+### Training
 Train ADE model with a specified configure file `CONFIG_FILE` (e.g, `configs/clothing.yml`) using
 ```
 python train.py --config CONFIG_FILE
 ```
 After training, the `logs` folder should be created with logs, configs, and checkpoints saved.
 
-### 🔎 Inference
+### Inference
 Test ADE model with a specified log forlder `LOG_FOLDER` (e.g, `logs/ade_cw/clothing`) using
 ```
 python test.py --log LOG_FOLDER
 ```
-### 📈 Results
-**Quantitative results**:
+## Results
+
+### Quantitative results
+
 | **Dataset** | **AUC<sup>cw</sup>** | **HM<sup>cw</sup>** | **AUC<sup>ow</sup>**| **HM<sup>ow</sup>** |
 |---------------|------------|---------------|------------|---------------|
 | Clothing | 92.4 | 88.7 | 68.0 | 74.2 |
 | UT-Zappos | 35.1 | 51.1 | 27.1 | 44.8 |
 | CGQA | 5.2 | 18.0 | 1.42 | 7.6 |
 
-**Qualitative results**:  
+
+### Qualitative results
+
 From text 💬 to image 🌄: 
 ![image](img/txt2img.png)
 
 From image 🌄 to text 💬:  
 ![image](img/img2txt.png)
 
-### 💡 Citation
+## Citation
 If you use this code in your research, please consider citing our paper:
 ```
 @InProceedings{hao2023ade,
@@ -81,5 +86,5 @@ If you use this code in your research, please consider citing our paper:
                year={2023}}
 ```
 
-### 🌟 Shoutouts
+## Acknowledgements
 Our project is based on [CZSL](https://github.com/ExplainableML/czsl). Thanks for open source!
