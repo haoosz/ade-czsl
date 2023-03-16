@@ -44,14 +44,14 @@ Please download the [pretrained models](https://drive.google.com/drive/folders/1
 python test.py --log ckpt/MODEL_FOLDER
 ```
 
-### 🧱 Train the model
+### 🚀 Training
 Train ADE model with a specified configure file `CONFIG_FILE` (e.g, `configs/clothing.yml`) using
 ```
 python train.py --config CONFIG_FILE
 ```
 After training, the `logs` folder should be created with logs, configs, and checkpoints saved.
 
-###  Test the model
+### 🔎 Inference
 Test ADE model with a specified log forlder `LOG_FOLDER` (e.g, `logs/ade_cw/clothing`) using
 ```
 python test.py --log LOG_FOLDER
