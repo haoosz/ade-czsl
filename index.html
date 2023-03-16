@@ -1,0 +1,164 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./src/style.css" media="screen"/>
+
+<html lang="en">
+<head>
+	<title>Attention as Disentangler</title>
+	<meta charset="utf-8">
+	<!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+		if you update and want to force Facebook to re-scrape. -->
+	<meta property="og:image" content="">
+	<meta property="og:title" content="Attention as Disentangler">
+	<meta property="og:description" content="a compositional zero-shot learning model.">
+	<!-- Twitter automatically scrapes this. Go to https://cards-dev.twitter.com/validator?
+		if you update and want to force Twitter to re-scrape. -->
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:title" content="Attention as Disentangler">
+	<meta property="twitter:description" content="A compositional zero-shot learning model.">
+	<meta property="twitter:image" content="src/teaser.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add your Google Analytics tag here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-71Y5XX2NRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-97476543-1');
+    </script>
+
+</head>
+	
+	<body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+	<div class="container">
+	  <div class="title">
+		Learning Attention as Disentangler for Compositional Zero-shot Learning
+	  </div>
+
+	  <br><br>
+	
+	  <div class="author">
+		<a href="https://haoosz.github.io/">Shaozhe Hao</a>
+	  </div>
+	  <div class="author">
+		<a href="https://www.kaihan.org/">Kai Han</a>
+	  </div>
+	  <div class="author">
+		<a href="https://i.cs.hku.hk/~kykwong/">Kwan-Yee K. Wong</a>
+	  </div>
+	
+	  <br>
+
+	  <div class="affiliation">The University of Hong Kong</div>
+	
+	  <br>
+	  
+	  <div class="venue">
+		<font color="brick"><strong>CVPR 2023</strong></font>
+	  </div>
+
+	  <br>
+	  <div class="links"><a href="">
+		<img src="./src/paper.png" height="50px" style="position:relative;top:10px;">
+			<h4><strong>Paper</strong></h4>
+		</a>
+	  </div>
+	  <div class="links"><a href="">
+		<img src="./src/youtube.png" height="50px" style="position:relative;top:10px;">
+			<h4><strong>Video</strong></h4>
+		</a></div>
+
+		<div class="links"><a href="https://github.com/haoosz/ade-czsl">
+			<img src="./src/github.png" height="50px" style="position:relative;top:10px;">
+				<h4><strong>Code</strong></h4>
+		</a>
+		</div>
+
+	  <br><br><br>
+
+	  <img style="width: 100%;" src="./src/pipeline.png" alt="Teaser figure.">
+  	  <br>
+	  
+	  <br><br>
+	  <hr>
+	  <br>
+	  <center><h1>Abstract</h1></center>
+	  <div style="width: 82%;" align="justify">
+		Compositional zero-shot learning (CZSL) is aimed at learning visual concepts (i.e., attributes and objects) from seen compositions and combining concept knowledge into unseen compositions.
+		The key to CZSL is learning the disentanglement of the attribute-object composition.
+		To this purpose, we propose to exploit cross-attentions as compositional disentanglers to learn disentangled concept embeddings.
+		For example, if we want to recognize an unseen composition "yellow flower", we can learn the attribute concept "yellow" and object concept "flower" from different yellow objects and different flowers respectively.
+		To further constrain the disentanglers to learn the concept of interest, we employ a regularization at the attention level. Specifically, we adapt the earth mover's distance (EMD) as a feature similarity metric in the cross-attention module.
+		Moreover, benefiting from concept disentanglement, we improve the inference process and tune the prediction score by combining multiple concept probabilities.
+		Comprehensive experiments on three CZSL benchmark datasets demonstrate that our method significantly outperforms previous works in both the closed- and open-world settings, establishing a new state-of-the-art.
+	  </div>
+	
+	
+	  <br><br>
+	  <hr>
+	  
+	  <h1>Qualitative Results</h1>
+	  <details class="details-example">
+	  <summary><font style="font-size:20px"><strong>
+		<font color="#0066FF">Text</font>-to-<font color="#FF3300">Image</font> Retrieval ( &#128172; &rarr; &#127748; )
+	  </strong></font></summary>
+	  <br>
+	  <img style="width: 100%;" src="./src/txt2img.png" alt="text to image figure.">
+	  </details>
+	
+	  <br>
+	  
+	  <details class="details-example">
+	  <summary><font style="font-size:20px"><strong><font color="#FF3300">Image</font>-to-<font color="#0066FF">Text</font> Retrieval ( &#127748; &rarr; &#128172; )</strong></font></summary>
+	  <br>
+	  <img style="width: 100%;" src="./src/img2txt.png" alt="image to text figure.">
+	  </details>
+	  
+
+	  <br><br>
+	  <hr>
+	
+	  <h1>Citation</h1>
+	  <div class="paper-thumbnail">
+		<a href="https://arxiv.org/">
+		  <img class="layered-paper-big" width="100%" src="./src/thumbnail.png" alt="Paper thumbnail">
+		</a>
+	  </div>
+	  <div class="paper-info">
+		<br>
+		<p><b>Learning Attention as Disentangler for Compositional Zero-shot Learning</b><br>
+		Shaozhe Hao, Kai Han, Kwan-Yee K. Wong<br>
+		CVPR 2023</p>
+<pre><code>@InProceedings{hao2023ade,
+  title={Learning Attention as Disentangler for Compositional Zero-shot Learning},
+  author={Hao, Shaozhe and Han, Kai and Wong, Kwan-Yee K.},
+  booktitle={CVPR},
+  year={2023}
+}
+</code></pre>
+	  </div>
+
+	  <br><br>
+	  <hr>
+
+	  <h1>Acknowledgements</h1>
+	  <p style="width: 80%;">
+	
+		This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful project</a>, and inherits the modifications made by <a href="https://github.com/jasonyzhang/webpage-template">Jason Zhang</a>.
+		The code can be found <a href="https://github.com/elliottwu/webpage-template">here</a>.
+	  </p>
+	
+	  <br><br>
+	</div>
+	
+	
+	
+	<script src="./src/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	
+	
+	</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
