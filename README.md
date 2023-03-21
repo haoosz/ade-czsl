@@ -11,7 +11,7 @@ CVPR 2023
 
 <!-- ![GitHub](https://img.shields.io/github/license/haoosz/ade-czsl) -->
 
-![image](img/pipeline.png)
+![image](img/teaser.gif)
 
 *TL;DR: A simgle cross-attention mechanism is efficient to disentangle visual concepts, i.e., attribute and object concepts, enhancing CZSL performance.*
 
