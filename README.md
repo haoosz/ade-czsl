@@ -33,7 +33,7 @@ conda activate ade
 
 ## Download
 
-**Datasets**: We include a script to download all datasets used in our paper. You need to download any dataset before training the model. Please download datasets using
+**Datasets**: We include a script to download all datasets used in our paper. You need to download any dataset before training the model. Please download datasets from: [Clothing16K](https://drive.google.com/drive/folders/1ky5BvTFrMkPBdAWixHFGLdcfJHfu5e9_?usp=share_link) and [Vaw-CZSL](https://drive.google.com/drive/folders/1CalwDXkkGALxz0e-aCFg9xBmf7Pu4eXL?usp=sharing). You can download other datasets using
 ```
 bash utils/download_data.sh
 ```
