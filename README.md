@@ -2,7 +2,7 @@
 
 This is the official PyTorch codes for the paper:  
 
-[**Learning Attention as Disentangler for Compositional Zero-shot Learning**]()  
+[**Learning Attention as Disentangler for Compositional Zero-shot Learning**](https://arxiv.org/abs/2303.15111)  
 [Shaozhe Hao](https://haoosz.github.io/),
 [Kai Han](https://www.kaihan.org/), 
 [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/)  
