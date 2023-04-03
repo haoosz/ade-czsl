@@ -1,5 +1,9 @@
 # Attention as Disentangler (CVPR 2023)
 
+[![Project Page](https://img.shields.io/badge/%F0%9F%8C%8D-Website-blue)](https://haoosz.github.io/ade-czsl/)
+[![arXiv](https://img.shields.io/badge/arXiv-2303.15111%20-b31b1b)](https://arxiv.org/abs/2303.15111)
+![License](https://img.shields.io/github/license/haoosz/ade-czsl?color=lightgray)
+
 This is the official PyTorch codes for the paper:  
 
 [**Learning Attention as Disentangler for Compositional Zero-shot Learning**](https://arxiv.org/abs/2303.15111)  
@@ -8,9 +12,7 @@ This is the official PyTorch codes for the paper:
 [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/)  
 CVPR 2023  
 
-[![Project Page](https://img.shields.io/badge/%F0%9F%8C%8D-Website-blue)](https://haoosz.github.io/ade-czsl/)
-[![arXiv](https://img.shields.io/badge/arXiv-2303.15111%20-b31b1b)](https://arxiv.org/abs/2303.15111)
-![License](https://img.shields.io/github/license/haoosz/ade-czsl?color=lightgray)
+### [Project Page](https://haoosz.github.io/ade-czsl/) | [Code](https://github.com/haoosz/ade-czsl) | [Paper](https://arxiv.org/abs/2303.15111)
 
 <p align="left">
     <img src='img/teaser.gif' width="80%">
