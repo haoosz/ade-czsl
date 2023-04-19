@@ -18,7 +18,7 @@ CVPR 2023
     <img src='img/teaser.gif' width="80%">
 </p>
 
-*TL;DR: A simgle cross-attention mechanism is efficient to disentangle visual concepts, i.e., attribute and object concepts, enhancing CZSL performance.*
+*TL;DR: A single cross-attention mechanism is efficient to disentangle visual concepts, i.e., attribute and object concepts, enhancing CZSL performance.*
 
 ---
 
@@ -45,7 +45,7 @@ C-GQA. In the supplementary material, we also add experiments on Vaw-CZSL.
 
 **Pretrained models**:
 We provide models pretrained on different datasets under closed-world or open-world settings.   
-Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=shari) and quickly start by testing their performance using
+Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=sharing) and quickly start by testing their performance using
 ```
 python test.py --log ckpt/MODEL_FOLDER
 ```
@@ -59,7 +59,7 @@ python train.py --config CONFIG_FILE
 After training, the `logs` folder should be created with logs, configs, and checkpoints saved.
 
 ### Inference
-Test ADE model with a specified log forlder `LOG_FOLDER` (e.g, `logs/ade_cw/clothing`) using
+Test ADE model with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_cw/clothing`) using
 ```
 python test.py --log LOG_FOLDER
 ```
