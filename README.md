@@ -18,7 +18,7 @@ CVPR 2023
     <img src='img/teaser.gif' width="80%">
 </p>
 
-*TL;DR: A single cross-attention mechanism is efficient to disentangle visual concepts, i.e., attribute and object concepts, enhancing CZSL performance.*
+*TL;DR: A simple cross-attention mechanism is efficient to disentangle visual concepts, i.e., attribute and object concepts, enhancing CZSL performance.*
 
 ---
 
