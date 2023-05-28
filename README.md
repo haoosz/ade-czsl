@@ -44,8 +44,8 @@ In our paper, we conduct experiments on Clothing16K, UT-Zappos50K, and
 C-GQA. In the supplementary material, we also add experiments on Vaw-CZSL.
 
 **Pretrained models**:
-We provide models pretrained on different datasets under closed-world or open-world settings.   
-Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=sharing) and quickly start by testing their performance using
+DINO pretrained ViT-B-16 can be found [here](https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth).
+We also provide models pretrained on different datasets under closed-world or open-world settings. Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=sharing) and quickly start by testing their performance using
 ```
 python test.py --log ckpt/MODEL_FOLDER
 ```
