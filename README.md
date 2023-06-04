@@ -84,7 +84,7 @@ From image 🌄 to text 💬:
 
 ## Citation
 If you use this code in your research, please consider citing our paper:
-```
+```bibtex
 @InProceedings{hao2023ade,
                title={Learning Attention as Disentangler for Compositional Zero-shot Learning},
                author={Hao, Shaozhe and Han, Kai and Wong, Kwan-Yee K.},
