@@ -1,6 +1,6 @@
 # Attention as Disentangler (CVPR 2023)
 
-[![Project Page](https://img.shields.io/badge/%F0%9F%8C%8D-Website-blue)](https://haoosz.github.io/ade-czsl/)
+[![Project Page](https://img.shields.io/badge/Webpage-0054a6?logo=Google%20chrome&logoColor=white)](https://haoosz.github.io/ade-czsl/)
 [![arXiv](https://img.shields.io/badge/arXiv-2303.15111%20-b31b1b)](https://arxiv.org/abs/2303.15111)
 ![License](https://img.shields.io/github/license/haoosz/ade-czsl?color=lightgray)
 
