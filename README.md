@@ -64,7 +64,7 @@ Test ADE model with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_cw/cloth
 python test.py --log LOG_FOLDER
 ```
 
-## 🔥 Retrieval Test
+## 🔥 Retrieval
 ### Image To Text
 Conduct image-to-text retrieval with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_ow/cgqa`) and a sample number `SAMPLE_NUM` (default=100).
 ```
