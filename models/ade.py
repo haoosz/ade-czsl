@@ -382,6 +382,19 @@ class ADE(nn.Module):
         
         return (loss_comp + loss_obj + loss_attr + loss_obj_bar + loss_attr_bar + loss_emd).mean(), None, (score_obj, score_attr, score_dis)
     
+    def get_concept_exclusive(self, x):
+        img = x
+
+        img_attn, attn_comp = self.cross_attn(q=img, k=img, return_attention=True)
+        img_attn_attr, attn_attr = self.cross_attn_attr(q=img, k=img, return_attention=True)
+        img_attn_obj, attn_obj = self.cross_attn_obj(q=img, k=img, return_attention=True)
+        
+        img_proj = self.image_embedder(img_attn[:,0,:])
+        img_proj_obj = self.image_embedder_obj(img_attn_obj[:,0,:])
+        img_proj_attr = self.image_embedder_attr(img_attn_attr[:,0,:])
+
+        return img_proj_attr, img_proj_obj
+    
     def forward(self, x):
         if self.training:
             loss, pred, scores = self.train_forward(x)

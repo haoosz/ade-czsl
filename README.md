@@ -63,8 +63,34 @@ Test ADE model with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_cw/cloth
 ```
 python test.py --log LOG_FOLDER
 ```
-## Results
 
+## 🔥 Retrieval Test
+### Image To Text
+Conduct image-to-text retrieval with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_ow/cgqa`) and a sample number `SAMPLE_NUM` (default=100).
+```
+python img2txt_retrieval.py --log LOG_FOLDER --sample_num SAMPLE_NUM
+```
+
+### Text To Image
+Conduct text-to-image retrieval with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_ow/cgqa`) and a given text prompt `TEXT` (e.g., *squatting catcher*).
+```
+python txt2img_retrieval.py --log LOG_FOLDER --text_prompt TEXT
+```
+
+### Visual Concept Retrieval
+Conduct visual concept retrieval with a specified log folder `LOG_FOLDER` (e.g, `logs/ade_cw/clothing`) and a given image path `IMG_PATH` (e.g., `clothing/images/green_suit/000002.jpg`).
+```
+python visual_concept_retrieval.py --log LOG_FOLDER --image_path IMG_PATH
+```
+
+You can also adjust the coefficient $\beta$ (`args.aow`) for different datasets in retrieval tasks, referring to the chosen $\beta$ in inference:
+| **Dataset** | **Closed-World** | **Open-World** |
+|---------------|------------|---------------|
+| Clothing | $\beta$ = 0.1 | $\beta$ = 0.1 |
+| UT-Zappos | $\beta$ = 0.9 | $\beta$ = 0.9 |
+| CGQA | $\beta$ = 1.0 | $\beta$ = 0.7 |
+
+## Results
 ### Quantitative results
 
 | **Dataset** | **AUC<sup>cw</sup>** | **HM<sup>cw</sup>** | **AUC<sup>ow</sup>**| **HM<sup>ow</sup>** |
