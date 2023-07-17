@@ -1,6 +1,6 @@
 # Attention as Disentangler (CVPR 2023)
 
-[![Project Page](https://img.shields.io/badge/%F0%9F%8C%8D-Website-blue)](https://haoosz.github.io/ade-czsl/)
+[![Project Page](https://img.shields.io/badge/Webpage-0054a6?logo=Google%20chrome&logoColor=white)](https://haoosz.github.io/ade-czsl/)
 [![arXiv](https://img.shields.io/badge/arXiv-2303.15111%20-b31b1b)](https://arxiv.org/abs/2303.15111)
 ![License](https://img.shields.io/github/license/haoosz/ade-czsl?color=lightgray)
 
@@ -44,8 +44,8 @@ In our paper, we conduct experiments on Clothing16K, UT-Zappos50K, and
 C-GQA. In the supplementary material, we also add experiments on Vaw-CZSL.
 
 **Pretrained models**:
-We provide models pretrained on different datasets under closed-world or open-world settings.   
-Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=sharing) and quickly start by testing their performance using
+DINO pretrained ViT-B-16 can be found [here](https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth).
+We also provide models pretrained on different datasets under closed-world or open-world settings. Please download the [pretrained models](https://drive.google.com/drive/folders/1s2Ppr2bj8gDwAHBQAz33HbVzmrmbkSAI?usp=sharing) and quickly start by testing their performance using
 ```
 python test.py --log ckpt/MODEL_FOLDER
 ```
@@ -110,7 +110,7 @@ From image 🌄 to text 💬:
 
 ## Citation
 If you use this code in your research, please consider citing our paper:
-```
+```bibtex
 @InProceedings{hao2023ade,
                title={Learning Attention as Disentangler for Compositional Zero-shot Learning},
                author={Hao, Shaozhe and Han, Kai and Wong, Kwan-Yee K.},
