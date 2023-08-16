@@ -77,6 +77,10 @@ def retrieve_txt(feat_extractor, img_path, model, args, threshold=None, print_re
         
         print(txt_out)
         
+        if not os.path.exists("./img2txt_retrieval/"):
+            os.makedirs("./img2txt_retrieval/")
+            print("The new directory img2txt_retrieval is created!")
+            
         with open('./img2txt_retrieval/{}_unseen_ow.txt'.format(args.dataset), 'a') as f:
             f.write(txt_out)  
                
